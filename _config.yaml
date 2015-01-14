@@ -1,0 +1,4 @@
+baseurl: dist
+source: dist
+markdown: redcarpet
+highlighter: true
