@@ -1,24 +1,30 @@
-'use strict';
+"use strict"
 module.exports = (grunt) ->
 
-  require("load-grunt-tasks")(grunt);
-  require("time-grunt")(grunt);
+  require("load-grunt-tasks")(grunt)
+  require("time-grunt")(grunt)
 
   config =
     app: "app"
     dist: "dist"
-    site: "_site"
 
   grunt.initConfig
     config: config
 
-    scss:
-      options:
-        style: "expanded"
-        sourcemap: true
-        banner: "css files"
-      files:
-        "main.css": "<% config.app %>/scss/{,*/}*.scss"
+    sass:
+      dest:
+        files:
+          "dist/style/main.css": "app/scss/*.scss"
+        options:
+          style: "expanded"
+          sourcemap: true
+          banner: "/* css files */"
+
+    jshint:
+      files: [
+        # "Gruntfile.coffee"
+        "<% config.app %>/coffee/*.coffee"
+      ]
 
     copy:
       dest:
@@ -41,4 +47,4 @@ module.exports = (grunt) ->
           ]
         ]
 
-  grunt.registerTask("default", ["copy"]);
+  grunt.registerTask("default", ["copy", "sass", "jshint"])
