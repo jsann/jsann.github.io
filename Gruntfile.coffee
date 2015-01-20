@@ -8,26 +8,34 @@ module.exports = (grunt) ->
     app: "app"
     dist: "dist"
 
+
   grunt.initConfig
     config: config
 
+    watch:
+      scripts:
+        files: "<%= config.app %>/coffee/*.coffee"
+        tasks: "jshint"
+      css:
+        files: "<%= config.app %>/scss/*.scss"
+        tasks: "sass"
+
     sass:
-      dest:
+      dist:
         files:
-          "dist/style/main.css": "app/scss/*.scss"
+          "<%= config.dist %>/style/main.css": "<%= config.app %>/scss/*.scss"
         options:
           style: "expanded"
-          sourcemap: true
           banner: "/* css files */"
 
     jshint:
       files: [
         # "Gruntfile.coffee"
-        "<% config.app %>/coffee/*.coffee"
+        "<%= config.app %>/coffee/*.coffee"
       ]
 
     copy:
-      dest:
+      dist:
         files: [
           expand: true
           cwd: "<%= config.app %>"
@@ -46,5 +54,9 @@ module.exports = (grunt) ->
             "*.html"
           ]
         ]
+
+    clean:
+      dist:
+        src: "dist/{,**/}*"
 
   grunt.registerTask("default", ["copy", "sass", "jshint"])
