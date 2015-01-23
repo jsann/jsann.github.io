@@ -1,4 +1,4 @@
 baseurl:
 source: dist
 markdown: redcarpet
-highlighter: true
+highlighter: pygments

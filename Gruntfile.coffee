@@ -13,12 +13,17 @@ module.exports = (grunt) ->
     config: config
 
     watch:
+      gruntfile:
+        files: "Gruntfile.coffee"
       scripts:
         files: "<%= config.app %>/coffee/*.coffee"
         tasks: "jshint"
       css:
         files: "<%= config.app %>/scss/*.scss"
-        tasks: "sass"
+        tasks: "compass"
+      html:
+        files: "<%= config.app %>/{,*/}*.html"
+        tasks: "htmlmin"
 
     sass:
       dist:
@@ -26,13 +31,25 @@ module.exports = (grunt) ->
           "<%= config.dist %>/style/main.css": "<%= config.app %>/scss/*.scss"
         options:
           style: "expanded"
-          banner: "/* css files */"
+          banner: "/* Designed by JSANN. */"
+
+    compass:
+      dist:
+        options:
+          sassDir: "<%= config.app %>/scss"
+          cssDir: "<%= config.dist %>/style"
 
     jshint:
-      files: [
-        # "Gruntfile.coffee"
-        "<%= config.app %>/coffee/*.coffee"
-      ]
+      files: "<%= config.app %>/coffee/*.coffee"
+
+    htmlmin:
+      options:
+        removeComments: true
+      files:
+        expend: true
+        cwd: "<%= config.app %>"
+        dest: "<%= config.dist %>"
+        src: "{,*/}*.html"
 
     copy:
       dist:
@@ -59,4 +76,4 @@ module.exports = (grunt) ->
       dist:
         src: "dist/{,**/}*"
 
-  grunt.registerTask("default", ["copy", "sass", "jshint"])
+  grunt.registerTask("default", ["copy", "compass", "jshint", "htmlmin"])
