@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>{{ page.title }}</title>
+<link rel="stylesheet" href="/style/reset.css">
+<link rel="stylesheet" href="/style/default.css">
+</head>
+<body>{{ site.baseUrl }}
+  <header>
+    <div class="ceiling clear">
+      <div class="wrap">
+        <div class="logo"><h1 title="JSANN">JSANN</h1> / Designed by JSANN.</div>
+        {% include nav.html %}
+      </div>
+    </div>
+    <article class="wrap"><h2>Designed by JSANN.</h2>蝴蝶飞不过沧海，谁忍心责怪？</article>
+  </header>
+  <article class="wrap content">
+    {{ content }}
+  </article>
+  <footer>
+    <p class="wrap copyright">CopyRight &copy; 2015-<script type="text/javascript">document.write(new Date().getFullYear());</script> <a href="http://www.jsann.com/">JSANN.COM</a>. Some Rights Reserved <a href="mailto:jsann@jsann.com">Jsann</a>.</p>
+  </footer>
+</body>
+</html>
