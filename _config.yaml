@@ -1,4 +1,0 @@
-baseurl:
-source: dist
-markdown: redcarpet
-highlighter: pygments
