@@ -1,17 +1,17 @@
 /* line 1, ../../app/scss/reset.scss */
+body {
+  line-height: 1.5;
+}
+
+/* line 4, ../../app/scss/reset.scss */
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td {
   margin: 0;
   padding: 0;
 }
 
-/* line 5, ../../app/scss/reset.scss */
+/* line 8, ../../app/scss/reset.scss */
 fieldset, img {
   border: 0;
-}
-
-/* line 8, ../../app/scss/reset.scss */
-:focus {
-  outline: 0;
 }
 
 /* line 11, ../../app/scss/reset.scss */
@@ -51,30 +51,30 @@ input, button, textarea, select {
 }
 
 /* line 35, ../../app/scss/reset.scss */
-body {
-  line-height: 1.5;
-}
-
-/* line 38, ../../app/scss/reset.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 41, ../../app/scss/reset.scss */
+/* line 38, ../../app/scss/reset.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 45, ../../app/scss/reset.scss */
+/* line 42, ../../app/scss/reset.scss */
 caption, th {
   text-align: left;
 }
 
-/* line 48, ../../app/scss/reset.scss */
+/* line 45, ../../app/scss/reset.scss */
 sup, sub {
   font-size: 100%;
   vertical-align: baseline;
+}
+
+/* line 49, ../../app/scss/reset.scss */
+:focus {
+  outline: 0;
 }
 
 /* line 52, ../../app/scss/reset.scss */
@@ -92,3 +92,5 @@ blockquote:before, blockquote:after, q:before, q:after {
   content: '';
   content: none;
 }
+
+/*# sourceMappingURL=reset.css.map */

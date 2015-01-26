@@ -2,10 +2,13 @@
 layout: default
 title: 我的Blog
 ---
-<h3>{{ page.title }}</h3>
-<p>最新文章</p>
-<ul>
+<ul class="article-list">
   {% for post in site.posts %}
-    <li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+    <li>
+      <h4><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
+      <p><a href="{{ site.blog.link }}" title="Post by {{ site.blog.author }}">{{ site.blog.author }}</a> <span title="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</span></p>
+      <!-- <div class="excerpt">{{ post.excerpt }}</div> -->
+      <p>{{ post.tags | array_to_sentence_string }}</p>
+    </li>
   {% endfor %}
 </ul>
