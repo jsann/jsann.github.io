@@ -6,8 +6,9 @@
 <link rel="stylesheet" href="/style/reset.css">
 <link rel="stylesheet" href="/style/default.css">
 <link rel="stylesheet" href="/style/syntax.css">
-<script src="script/jquery.min.js"></script>
-<script src="script/typed.js"></script>
+<script src="script/vendor/jquery.min.js"></script>
+<script src="script/vendor/typed.js"></script>
+<script src="script/default.js"></script>
 </head>
 <body>
   <header>
@@ -17,7 +18,7 @@
         {% include nav.html %}
       </div>
     </div>
-    <article class="wrap"><h2>蝴蝶飞不过沧海，谁忍心责怪？</h2>Just follow your heart.</article>
+    <article class="wrap"><h2><span class="js-typed"></span></h2>Just follow your heart.</article>
   </header>
   <article class="wrap content">
     {{ content }}

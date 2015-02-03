@@ -83,28 +83,70 @@ header article {
 /* line 65, ../../app/scss/default.scss */
 header article h2 {
   font-size: 28px;
+  height: 42px;
   margin-bottom: 10px;
 }
 
-/* line 75, ../../app/scss/default.scss */
+/* line 73, ../../app/scss/default.scss */
+.typed-cursor {
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* line 116, ../../app/scss/default.scss */
 .article-list {
   padding: 30px 0;
 }
-/* line 78, ../../app/scss/default.scss */
+/* line 119, ../../app/scss/default.scss */
 .article-list li h4 {
   font-size: 24px;
 }
 
-/* line 84, ../../app/scss/default.scss */
+/* line 125, ../../app/scss/default.scss */
 footer {
   background-color: #191b1f;
   color: #fbfbfb;
 }
-/* line 87, ../../app/scss/default.scss */
+/* line 128, ../../app/scss/default.scss */
 footer a {
   color: #fbfbfb;
 }
-/* line 90, ../../app/scss/default.scss */
+/* line 131, ../../app/scss/default.scss */
 footer .copyright {
   text-align: center;
   height: 35px;
