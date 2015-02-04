@@ -2,7 +2,7 @@
 layout: post
 title: Hello World
 ---
-<h2>{{ page.title }}</h2>
+<h3>{{ page.title }}</h3>
 <p>Hello World</p>
 {% highlight javascript %}
 window.onload = function(){

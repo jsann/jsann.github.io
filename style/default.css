@@ -1,14 +1,14 @@
 @charset "UTF-8";
-/* line 6, ../../app/scss/default.scss */
+/* line 7, ../../app/scss/default.scss */
 ::selection {
   background-color: #f13c6e;
 }
 
-/* line 10, ../../app/scss/default.scss */
+/* line 11, ../../app/scss/default.scss */
 .clear {
   zoom: 1;
 }
-/* line 12, ../../app/scss/default.scss */
+/* line 13, ../../app/scss/default.scss */
 .clear:after {
   content: "\20";
   display: block;
@@ -16,14 +16,14 @@
   height: 0;
 }
 
-/* line 20, ../../app/scss/default.scss */
+/* line 21, ../../app/scss/default.scss */
 body {
   font-family: "微软雅黑";
   font-size: 12px;
   color: #666;
 }
 
-/* line 26, ../../app/scss/default.scss */
+/* line 27, ../../app/scss/default.scss */
 a:hover {
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
@@ -31,31 +31,31 @@ a:hover {
   transition: all 0.5s ease;
 }
 
-/* line 31, ../../app/scss/default.scss */
+/* line 32, ../../app/scss/default.scss */
 .wrap {
   margin: 0 50px;
 }
 
-/* line 35, ../../app/scss/default.scss */
+/* line 36, ../../app/scss/default.scss */
 header {
   font-size: 14px;
   color: #f0f0f0;
   background-color: #f13c6e;
 }
-/* line 39, ../../app/scss/default.scss */
+/* line 40, ../../app/scss/default.scss */
 header a {
   color: #fff;
 }
-/* line 42, ../../app/scss/default.scss */
+/* line 43, ../../app/scss/default.scss */
 header .ceiling {
   line-height: 70px;
   background-color: #e93969;
 }
-/* line 45, ../../app/scss/default.scss */
+/* line 46, ../../app/scss/default.scss */
 header .ceiling .logo {
   float: left;
 }
-/* line 47, ../../app/scss/default.scss */
+/* line 48, ../../app/scss/default.scss */
 header .ceiling .logo h1 {
   font-size: 28px;
   margin-top: -10px;
@@ -66,32 +66,32 @@ header .ceiling .logo h1 {
   *zoom: 1;
   *display: inline;
 }
-/* line 54, ../../app/scss/default.scss */
+/* line 55, ../../app/scss/default.scss */
 header .ceiling nav {
   float: right;
 }
-/* line 56, ../../app/scss/default.scss */
+/* line 57, ../../app/scss/default.scss */
 header .ceiling nav li {
   float: left;
   margin: 0 10px;
 }
-/* line 62, ../../app/scss/default.scss */
+/* line 63, ../../app/scss/default.scss */
 header article {
   text-align: center;
   padding: 50px 0;
 }
-/* line 65, ../../app/scss/default.scss */
+/* line 66, ../../app/scss/default.scss */
 header article h2 {
   font-size: 28px;
   height: 42px;
   margin-bottom: 10px;
 }
 
-/* line 73, ../../app/scss/default.scss */
+/* line 74, ../../app/scss/default.scss */
 .typed-cursor {
   opacity: 1;
-  -webkit-animation: blink 0.7s infinite;
   -moz-animation: blink 0.7s infinite;
+  -webkit-animation: blink 0.7s infinite;
   animation: blink 0.7s infinite;
 }
 
@@ -128,25 +128,36 @@ header article h2 {
     opacity: 1;
   }
 }
-/* line 116, ../../app/scss/default.scss */
+/* line 115, ../../app/scss/default.scss */
 .article-list {
   padding: 30px 0;
 }
-/* line 119, ../../app/scss/default.scss */
+/* line 118, ../../app/scss/default.scss */
 .article-list li h4 {
   font-size: 24px;
 }
 
-/* line 125, ../../app/scss/default.scss */
+/* line 124, ../../app/scss/default.scss */
+.post-content {
+  padding: 30px 0;
+  line-height: 1.6em;
+}
+/* line 127, ../../app/scss/default.scss */
+.post-content h3 {
+  font-size: 24px;
+  padding-bottom: 15px;
+}
+
+/* line 133, ../../app/scss/default.scss */
 footer {
   background-color: #191b1f;
   color: #fbfbfb;
 }
-/* line 128, ../../app/scss/default.scss */
+/* line 136, ../../app/scss/default.scss */
 footer a {
   color: #fbfbfb;
 }
-/* line 131, ../../app/scss/default.scss */
+/* line 139, ../../app/scss/default.scss */
 footer .copyright {
   text-align: center;
   height: 35px;
