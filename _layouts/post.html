@@ -1,6 +1,5 @@
 ---
 layout: layout
-title: {{ page.title }}
 ---
 <div class="post-content">{{ content }}</div>
-{% include comment.html %}
+{% if site.config.comment %}{% include comment.html %}{% endif %}
