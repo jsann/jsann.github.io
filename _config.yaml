@@ -1,0 +1,9 @@
+baseurl:
+source: dist
+markdown: redcarpet
+highlighter: pygments
+blog:
+  name: "JSANN"
+  author: "jsann"
+config:
+  comment: true
