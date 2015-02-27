@@ -1,5 +1,9 @@
 ---
 layout: layout
 ---
-<div class="post-content">{{ content }}</div>
+<div class="post-content">
+  <h3>{{ page.title }}</h3>
+  {{ content }}
+  <p>{{ page.date | date_to_string }}</p>
+</div>
 {% if site.config.comment %}{% include comment.html %}{% endif %}
