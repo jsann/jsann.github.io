@@ -2,7 +2,6 @@
 layout: post
 title: Hello World
 ---
-<h3>{{ page.title }}</h3>
 <p>Hello World</p>
 {% highlight javascript %}
 window.onload = function(){
