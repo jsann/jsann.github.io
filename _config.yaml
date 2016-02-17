@@ -1,6 +1,6 @@
 baseurl:
 source: dist
-exclude: ["CNAME", "README.md", "_config.yaml"]
+exclude: ["README.md", "_config.yaml"]
 markdown: redcarpet
 highlighter: pygments
 blog:
